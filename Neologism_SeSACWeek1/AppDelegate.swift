@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
+
 
 @main
 @available(iOS 13.0, *)
@@ -15,7 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // MARK: - keyboard 객체 가리지 않고 같이 올라가기
+        IQKeyboardManager.shared.enable = true // 키보드 영역에 텍스트 필드가 있어서 가려지는 경우, 텍스트필드가 같이 올라가서 안가려지게 해주는거
+        
+//         MARK: - for 3 Sceonds pop lunch screen - start
         sleep(3)
+        // MARK: - end
         return true
     }
 
