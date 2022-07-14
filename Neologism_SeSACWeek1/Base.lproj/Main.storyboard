@@ -24,15 +24,13 @@
                                     <constraint firstAttribute="height" constant="55" id="5CU-B9-YcT"/>
                                     <constraint firstAttribute="width" constant="60" id="vuk-Dj-Y2c"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="magnifyingglass" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
                                 <connections>
-                                    <action selector="tabGesture_keyboardDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DfW-n9-Pz2"/>
+                                    <action selector="findButton_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xa5-Qi-TLf"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="신조어를 입력해주세요. " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cex-cF-rSH">
@@ -51,6 +49,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="버튼"/>
+                                <connections>
+                                    <action selector="translate_ButtoenClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b05-kG-P4t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-u1-q29">
                                 <rect key="frame" x="83" y="134" width="50" height="31"/>
@@ -60,6 +61,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="버튼"/>
+                                <connections>
+                                    <action selector="translate_ButtoenClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mo2-Fl-oBk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jr-BD-age">
                                 <rect key="frame" x="138" y="134" width="50" height="31"/>
@@ -69,6 +73,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="버튼"/>
+                                <connections>
+                                    <action selector="translate_ButtoenClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ghb-f1-Lvl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="754" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHB-yx-GGC">
                                 <rect key="frame" x="193" y="134" width="50" height="31"/>
@@ -78,6 +85,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="버튼"/>
+                                <connections>
+                                    <action selector="translate_ButtoenClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ED3-E9-Kv3"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2dA-pv-Nvn">
                                 <rect key="frame" x="45" y="273" width="324" height="350"/>
@@ -85,7 +95,7 @@
                                     <constraint firstAttribute="height" constant="350" id="V2w-c7-8eU"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyz-Yu-UGq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이곳에 뜻이 나옵니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyz-Yu-UGq">
                                 <rect key="frame" x="86.5" y="422" width="241" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -128,6 +138,7 @@
                     </view>
                     <connections>
                         <outlet property="neologism_Translate_Outlet" destination="Vyz-Yu-UGq" id="eWa-Xk-J00"/>
+                        <outlet property="textField_Outlet" destination="cex-cF-rSH" id="rss-Il-hPu"/>
                         <outletCollection property="hashtag_Button" destination="Y0s-sh-ZEV" collectionClass="NSMutableArray" id="nvG-aO-8l7"/>
                         <outletCollection property="hashtag_Button" destination="YjN-u1-q29" collectionClass="NSMutableArray" id="F7d-xk-ke8"/>
                         <outletCollection property="hashtag_Button" destination="6Jr-BD-age" collectionClass="NSMutableArray" id="05m-fV-PWA"/>
@@ -137,7 +148,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="3Oy-m9-MEy">
                     <connections>
-                        <action selector="tabGesture_keyboardDown:" destination="BYZ-38-t0r" id="Ifn-sg-tSk"/>
+                        <action selector="tabGesture_keyboardDown:" destination="BYZ-38-t0r" id="Mkf-FI-vG2"/>
                         <outlet property="delegate" destination="8bC-Xf-vdC" id="MsS-ca-iNd"/>
                     </connections>
                 </tapGestureRecognizer>
