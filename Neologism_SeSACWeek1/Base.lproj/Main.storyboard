@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpo-ue-8np">
-                                <rect key="frame" x="334" y="64" width="60" height="55"/>
+                                <rect key="frame" x="310" y="64" width="60" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="5CU-B9-YcT"/>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="신조어를 입력해주세요. " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cex-cF-rSH">
-                                <rect key="frame" x="28" y="64" width="306" height="55"/>
+                                <rect key="frame" x="21.5" y="64" width="288.5" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -42,7 +42,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="254" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0s-sh-ZEV">
-                                <rect key="frame" x="28" y="134" width="50" height="31"/>
+                                <rect key="frame" x="21.5" y="134" width="50" height="31"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="j9m-ed-ZTG"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-u1-q29">
-                                <rect key="frame" x="83" y="134" width="50" height="31"/>
+                                <rect key="frame" x="76.5" y="134" width="50" height="31"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="ZqX-9E-tkW"/>
@@ -66,7 +66,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jr-BD-age">
-                                <rect key="frame" x="138" y="134" width="50" height="31"/>
+                                <rect key="frame" x="131.5" y="134" width="50" height="31"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="UoS-Ys-5eN"/>
@@ -78,11 +78,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="754" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHB-yx-GGC">
-                                <rect key="frame" x="193" y="134" width="50" height="31"/>
+                                <rect key="frame" x="186.5" y="134" width="48.5" height="31"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="yqX-ZW-BTe"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="버튼"/>
                                 <connections>
@@ -90,13 +87,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2dA-pv-Nvn">
-                                <rect key="frame" x="45" y="273" width="324" height="350"/>
+                                <rect key="frame" x="45" y="273" width="300" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="V2w-c7-8eU"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이곳에 뜻이 나옵니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyz-Yu-UGq">
-                                <rect key="frame" x="86.5" y="422" width="241" height="62"/>
+                                <rect key="frame" x="83.5" y="422" width="223" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -122,6 +119,7 @@
                             <constraint firstItem="Vyz-Yu-UGq" firstAttribute="width" secondItem="2dA-pv-Nvn" secondAttribute="width" multiplier="0.743827" id="QZy-v2-4lM"/>
                             <constraint firstItem="2dA-pv-Nvn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.390625" id="b4G-Af-dZf"/>
                             <constraint firstItem="cex-cF-rSH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="e8k-Le-XDO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NHB-yx-GGC" secondAttribute="trailing" constant="50" id="ekE-kS-1eq"/>
                             <constraint firstItem="Lpo-ue-8np" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gWn-Jc-2Qx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lpo-ue-8np" secondAttribute="trailing" constant="20" id="h4L-9J-5Zd"/>
                             <constraint firstItem="Y0s-sh-ZEV" firstAttribute="top" secondItem="cex-cF-rSH" secondAttribute="bottom" constant="15" id="jRo-xF-nDt"/>
